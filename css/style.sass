@@ -157,6 +157,7 @@ a
         height: 604px
         align-self: center
 .secondSection
+
     min-height: 960px
     background: #FFFFFF
     &__text
@@ -190,7 +191,8 @@ a
             margin-bottom: 24px
     &__info
         display: grid
-        grid-template-columns: repeat(4,1fr)
+        grid-template-columns: repeat(auto-fit,minmax(320px, 1fr))
+        justify-items: center
         margin-bottom: 120px
         &_ellipse
             padding-right: 15px
@@ -215,7 +217,8 @@ a
 
         &_line
             width: 255px
-            height: 1px
+            height: 2px
+            box-shadow: inset 0px -1px 0px #FFFFFF
             background: #ffffff
             margin-top: 72px
         &_blockText
@@ -224,6 +227,53 @@ a
             letter-spacing: -0.006em
             color: #FFFFFF
             margin-top: 24px
+.thirdSection
+    display: grid
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr))
+    justify-items: center
+    &__block
+        position: relative
+        z-index: 1
+        width: 480px
+        height: 480px
+        display: flex
+        justify-content: center
+        &:hover .thirdSection__block_firstLayer
+            display: block
+
+        &_ellipse
+            padding-right: 20px
+        &_1
+            background: #22356F
+        &_2
+            background: #0052C1
+        &_3
+            background: #FFE2DE
+        &_4
+            background: #62D0DF
+        &_5
+            background: #DEE1FF
+        &_6
+            background: #8F00FF
+        &_line
+            width: 340px
+            height: 2px
+            box-shadow: inset 0px -1px 0px #FFFFFF
+            background: #ffffff
+            margin-top: 94px
+        &_text
+            font-size: 32px
+            line-height: 32px
+            letter-spacing: -0.006em
+            color: #FFFFFF
+            margin-top: 30px
+            list-style-type: none
+        &_firstLayer
+            width: 480px
+            height: 480px
+            position: absolute
+            z-index: -1
+            display: none
 
     /* //////////PAGE Footer\\\\\\\\\\ */
 .footer

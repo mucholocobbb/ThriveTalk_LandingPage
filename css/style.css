@@ -228,7 +228,6 @@ a {
 .secondSection {
   min-height: 960px;
   background: #FFFFFF;
-  /* //////////PAGE Footer\\\\\\\\\\ */
 }
 
 .secondSection__text {
@@ -278,8 +277,9 @@ a {
 .secondSection__info {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[4];
-      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-columns: (minmax(320px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  justify-items: center;
   margin-bottom: 120px;
 }
 
@@ -331,7 +331,9 @@ a {
 
 .secondSection__info_line {
   width: 255px;
-  height: 1px;
+  height: 2px;
+  -webkit-box-shadow: inset 0px -1px 0px #FFFFFF;
+          box-shadow: inset 0px -1px 0px #FFFFFF;
   background: #ffffff;
   margin-top: 72px;
 }
@@ -342,6 +344,86 @@ a {
   letter-spacing: -0.006em;
   color: #FFFFFF;
   margin-top: 24px;
+}
+
+.thirdSection {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(380px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+  justify-items: center;
+  /* //////////PAGE Footer\\\\\\\\\\ */
+}
+
+.thirdSection__block {
+  position: relative;
+  z-index: 1;
+  width: 480px;
+  height: 480px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.thirdSection__block:hover .thirdSection__block_firstLayer {
+  display: block;
+}
+
+.thirdSection__block_ellipse {
+  padding-right: 20px;
+}
+
+.thirdSection__block_1 {
+  background: #22356F;
+}
+
+.thirdSection__block_2 {
+  background: #0052C1;
+}
+
+.thirdSection__block_3 {
+  background: #FFE2DE;
+}
+
+.thirdSection__block_4 {
+  background: #62D0DF;
+}
+
+.thirdSection__block_5 {
+  background: #DEE1FF;
+}
+
+.thirdSection__block_6 {
+  background: #8F00FF;
+}
+
+.thirdSection__block_line {
+  width: 340px;
+  height: 2px;
+  -webkit-box-shadow: inset 0px -1px 0px #FFFFFF;
+          box-shadow: inset 0px -1px 0px #FFFFFF;
+  background: #ffffff;
+  margin-top: 94px;
+}
+
+.thirdSection__block_text {
+  font-size: 32px;
+  line-height: 32px;
+  letter-spacing: -0.006em;
+  color: #FFFFFF;
+  margin-top: 30px;
+  list-style-type: none;
+}
+
+.thirdSection__block_firstLayer {
+  width: 480px;
+  height: 480px;
+  position: absolute;
+  z-index: -1;
+  display: none;
 }
 
 .footer {
