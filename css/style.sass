@@ -132,6 +132,10 @@ a
     background: #62D0DF
     display: flex
     justify-content: space-between
+    transition: transform 0.3s
+    &:hover
+        transform: scale(1.02)
+        box-shadow: 0 0 42px -16px
     &__text
         width: 555px
         margin-left: 180px
@@ -160,6 +164,10 @@ a
 
     min-height: 960px
     background: #FFFFFF
+    transition: transform 0.3s
+    &:hover
+        transform: scale(1.02)
+        box-shadow: 0 0 42px -16px
     &__text
         display: flex
         justify-content: center
@@ -191,8 +199,9 @@ a
             margin-bottom: 24px
     &__info
         display: grid
-        grid-template-columns: repeat(auto-fit,minmax(320px, 1fr))
+        grid-template-columns: repeat(auto-fit,minmax(256px, 360px))
         justify-items: center
+        justify-content: center
         margin-bottom: 120px
         &_ellipse
             padding-right: 15px
@@ -229,8 +238,9 @@ a
             margin-top: 24px
 .thirdSection
     display: grid
-    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr))
+    grid-template-columns: repeat(auto-fit, minmax(340px, 480px))
     justify-items: center
+    justify-content: center
     &__block
         position: relative
         z-index: 1
@@ -274,7 +284,155 @@ a
             position: absolute
             z-index: -1
             display: none
-
+.fourthSection
+    display: grid
+    grid-template-columns: repeat(auto-fit, minmax(340px, 480px))
+    justify-items: center
+    justify-content: center
+    margin-top: 22px
+    margin-bottom: 40px
+    transition: transform 0.3s
+    &:hover
+        transform: scale(1.02)
+        box-shadow: 0 0 42px -16px
+    &__block
+        min-height: 240px
+        width: 298px
+        transition: all 0.2s
+        &:hover
+            transform: scale(1.05)
+        &_headText
+            font-size: 28px
+            line-height: 33px
+            letter-spacing: -0.03em
+            color: #22356F
+            padding-top: 55px
+            padding-bottom: 28px
+        &_mainText
+            font-size: 16px
+            line-height: 25px
+            letter-spacing: -0.03em
+            color: rgba(34, 53, 111, 0.5)
+.fifthSection
+    min-height: 800px
+    display: flex
+    justify-content: space-between
+    transition: transform 0.3s
+    &:hover
+        transform: scale(1.02)
+        box-shadow: 0 0 42px -16px
+    &__img
+        width: 480px
+        height: 800px
+        align-self: center
+    &__text
+        display: flex
+        flex-direction: column
+        align-items: end
+        margin-right: 175px
+        padding-top: 103px
+        width: 676px
+        &_headText
+            font-size: 16px
+            line-height: 12px
+            letter-spacing: 0.06em
+            color: #22356F
+            padding-bottom: 225px
+        &_mainText
+            font-size: 36px
+            font-weight: 600
+            line-height: 53px
+            letter-spacing: -0.01em
+            color: #22356F
+            padding-bottom: 176px
+        &_mainTextLink
+            color: #62D0DF
+        &_link
+            margin-bottom: 42px
+            font-size: 16px
+            line-height: 23px
+            letter-spacing: 0.1em
+            color: #FAB63E
+.sixthSection
+    min-height: 800px
+    display: flex
+    justify-content: space-between
+    background: #22356F
+    transition: transform 0.3s
+    &:hover
+        transform: scale(1.02)
+        box-shadow: 0 0 42px -16px
+    &__img
+        width: 480px
+        height: 800px
+        align-self: center
+    &__text
+        display: flex
+        flex-direction: column
+        align-items: end
+        margin-left: 180px
+        padding-top: 103px
+        width: 579px
+        &_aboutText
+            font-size: 16px
+            line-height: 12px
+            letter-spacing: 0.06em
+            color: #FFFFFF
+            padding-bottom: 230px
+        &_headText
+            font-size: 64px
+            line-height: 94px
+            letter-spacing: -0.01em
+            color: #FFFFFF
+            padding-bottom: 75px
+        &_mainText
+            font-size: 36px
+            line-height: 53px
+            letter-spacing: -0.005em
+            color: #FFFFFF
+            padding-bottom: 64px
+        &_link
+            font-size: 16px
+            line-height: 23px
+            letter-spacing: 0.1em
+            color: #62D0DF
+            margin-bottom: 42px
+.sevenSection
+    min-height: 380px
+    display: flex
+    justify-content: space-between
+    transition: all 0.3s
+    &:hover
+        transform: scale(1.02)
+        box-shadow: 0 0 42px -16px
+    &__img
+        width: 570px
+        height: 380px
+        align-self: center
+    &__text
+        display: flex
+        justify-content: space-between
+        padding-top: 98px
+        margin-bottom: 42px
+        &_headText
+            font-size: 14px
+            line-height: 11px
+            letter-spacing: -0.006em
+            padding-bottom: 54px
+            color: #22356F
+        &_mainText
+            font-size: 14px
+            line-height: 23px
+            letter-spacing: -0.006em
+            color: rgba(34, 53, 111, 0.5)
+            padding-bottom: 32px
+            width: 207px
+    &__block
+        width: 240px
+        &:not(last-child)
+            margin-right: 16px
+        &:last-child
+            margin-right: 40px
     /* //////////PAGE Footer\\\\\\\\\\ */
 .footer
     background-color: #62D0DF
