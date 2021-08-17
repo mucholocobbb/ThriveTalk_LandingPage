@@ -187,17 +187,6 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-transition: -webkit-transform 0.3s;
-  transition: -webkit-transform 0.3s;
-  transition: transform 0.3s;
-  transition: transform 0.3s, -webkit-transform 0.3s;
-}
-
-.firstSection:hover {
-  -webkit-transform: scale(1.02);
-          transform: scale(1.02);
-  -webkit-box-shadow: 0 0 42px -16px;
-          box-shadow: 0 0 42px -16px;
 }
 
 .firstSection__text {
@@ -239,17 +228,6 @@ a {
 .secondSection {
   min-height: 960px;
   background: #FFFFFF;
-  -webkit-transition: -webkit-transform 0.3s;
-  transition: -webkit-transform 0.3s;
-  transition: transform 0.3s;
-  transition: transform 0.3s, -webkit-transform 0.3s;
-}
-
-.secondSection:hover {
-  -webkit-transform: scale(1.02);
-          transform: scale(1.02);
-  -webkit-box-shadow: 0 0 42px -16px;
-          box-shadow: 0 0 42px -16px;
 }
 
 .secondSection__text {
@@ -464,17 +442,6 @@ a {
           justify-content: center;
   margin-top: 22px;
   margin-bottom: 40px;
-  -webkit-transition: -webkit-transform 0.3s;
-  transition: -webkit-transform 0.3s;
-  transition: transform 0.3s;
-  transition: transform 0.3s, -webkit-transform 0.3s;
-}
-
-.fourthSection:hover {
-  -webkit-transform: scale(1.02);
-          transform: scale(1.02);
-  -webkit-box-shadow: 0 0 42px -16px;
-          box-shadow: 0 0 42px -16px;
 }
 
 .fourthSection__block {
@@ -513,17 +480,6 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-transition: -webkit-transform 0.3s;
-  transition: -webkit-transform 0.3s;
-  transition: transform 0.3s;
-  transition: transform 0.3s, -webkit-transform 0.3s;
-}
-
-.fifthSection:hover {
-  -webkit-transform: scale(1.02);
-          transform: scale(1.02);
-  -webkit-box-shadow: 0 0 42px -16px;
-          box-shadow: 0 0 42px -16px;
 }
 
 .fifthSection__img {
@@ -588,17 +544,6 @@ a {
       -ms-flex-pack: justify;
           justify-content: space-between;
   background: #22356F;
-  -webkit-transition: -webkit-transform 0.3s;
-  transition: -webkit-transform 0.3s;
-  transition: transform 0.3s;
-  transition: transform 0.3s, -webkit-transform 0.3s;
-}
-
-.sixthSection:hover {
-  -webkit-transform: scale(1.02);
-          transform: scale(1.02);
-  -webkit-box-shadow: 0 0 42px -16px;
-          box-shadow: 0 0 42px -16px;
 }
 
 .sixthSection__img {
@@ -665,16 +610,7 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
   /* //////////PAGE Footer\\\\\\\\\\ */
-}
-
-.sevenSection:hover {
-  -webkit-transform: scale(1.02);
-          transform: scale(1.02);
-  -webkit-box-shadow: 0 0 42px -16px;
-          box-shadow: 0 0 42px -16px;
 }
 
 .sevenSection__img {
