@@ -344,7 +344,6 @@ a
     display: flex
     justify-content: space-between
     background: #22356F
-
     &__img
         width: 480px
         height: 800px
@@ -384,8 +383,8 @@ a
     min-height: 380px
     display: flex
     justify-content: space-between
-
     &__img
+        // background: url(../img/sevenSectionImg.png)
         width: 570px
         height: 380px
         align-self: center
@@ -393,7 +392,7 @@ a
         display: flex
         justify-content: space-between
         padding-top: 98px
-        margin-bottom: 42px
+        margin: 0 auto 42px
         &_headText
             font-size: 14px
             line-height: 11px
@@ -408,11 +407,8 @@ a
             padding-bottom: 32px
             width: 207px
     &__block
-        width: 240px
-        &:not(last-child)
-            margin-right: 16px
-        &:last-child
-            margin-right: 40px
+        width: 100%
+
     /* //////////PAGE Footer\\\\\\\\\\ */
 .footer
     background-color: #62D0DF
@@ -429,3 +425,7 @@ a
             font-size: 14px
             line-height: 14px
             margin-left: 6px
+
+    /* //////////Adaptive\\\\\\\\\\ */ 
+
+@import ../css/_indexAdapt.sass
