@@ -193,7 +193,7 @@ a {
   width: 555px;
   margin-left: 180px;
   padding-top: 150px;
-  padding-bottom: 94px;
+  padding-bottom: 92px;
 }
 
 .firstSection__text_headText {
@@ -566,7 +566,7 @@ a {
       -ms-flex-align: end;
           align-items: end;
   margin-left: 180px;
-  padding-top: 103px;
+  padding-top: 100px;
   width: 579px;
 }
 
@@ -680,6 +680,20 @@ a {
 }
 
 @media (max-width: 1439px) {
+  .firstSection__text {
+    padding-top: 72px;
+    padding-right: 24px;
+  }
+  .fifthSection__text {
+    margin-left: 24px;
+    padding-top: 58px;
+  }
+  .fifthSection__text_headText {
+    padding-bottom: 164px;
+  }
+  .sixthSection__text_aboutText {
+    padding-bottom: 204px;
+  }
   .sevenSection__text_headText {
     padding-bottom: 24px;
   }
