@@ -105,7 +105,6 @@
             &_mainText
                 font-size: 20px
                 line-height: 32px
-
     .firstSection
         &__text
             margin-left: 0
@@ -120,6 +119,7 @@
             &_part2
                 font-size: 16px
                 line-height: 20px
+
     .secondSection__text_headText
         transform: translate(-2px , -78px)
     .thirdSection
@@ -184,6 +184,133 @@
 
 // @media  ( max-width: 900px ) and (min-width: 768px)
 
-// @media  ( max-width: 767px  )
+@media  ( max-width: 767px  )
+    .header
+        &__top
+            padding: 8px
+            flex-direction: column
+            background-color: aqua
+            &_logo
+                font-size: 36px
+                line-height: 48px
+            &_btn
+                margin-top: 48px
+        &__body
+            width: 100%
+            margin: 0
+            padding: 8px
+            padding-top: 48px
+            &_btn
+                margin-bottom: 48px
+        &__backgroundImg
+            display: none
+        &__backgroundColor
+            display: none
+        &__backgroundElem
+            width: 60%
+            height: 60%
+    .firstSection
+        overflow: hidden
+        position: relative
+        &__text
+            position: absolute
+            z-index: 1
+            margin-left: 0
+            margin: 0
+            padding: 8px
+            width: 100%
+            padding-top: 24px
+        &__img
+            position: absolute
+            left: -50px
+            opacity: 0.3
+    .secondSection
+        &__text
+            &_headText
+                position: absolute
+                transform: translateX(0)
+                transform: translateY(-78px)
+            &_centreText
+                text-align: center
+    .thirdSection
+        &__block
+            width: 360px
+            height: 360px
+            &_firstLayer
+                width: 360px
+                height: 360px
+    .fifthSection
+        position: relative
+        overflow: hidden
+        &__text
+            width: 100%
+            position: absolute
+            margin-right: 0
+            margin-left: 0
+            padding-top: 0
+            margin: 0
+            padding: 8px
+
+            &_headText
+                padding-bottom: 132px
+                padding-top: 32px
+                align-self: flex-end
+            &_mainText
+                font-size: 24px
+                line-height: 36px
+                padding-bottom: 100%
+                text-align: end
+            &_link
+                align-self: flex-end
+        &__img
+            position: absolute
+            opacity: 0.3
+            left: -92px
+    .sixthSection
+        position: relative
+        overflow: hidden
+        &__img
+            position: absolute
+            opacity: 0.3
+            left: -33px
+        &__text
+            position: absolute
+            z-index: 1
+            margin-left: 0
+            padding-top: 22px
+            margin: 8px
+            width: 100%
+            &_aboutText
+                padding-bottom: 88px
+            &_mainText
+                padding-bottom: 38%
+    .sevenSection
+        justify-content: center
+        align-items: center
+        position: relative
+        overflow: hidden
+        min-height: 0
+        &__img
+            opacity: 0.3
+        &__text
+            flex-direction: column
+            position: absolute
+            padding-top: 0
+            margin: 0
+            &_headText
+                padding-bottom: 0
+            &_mainText
+                font-size: 12px
+        &__block
+            text-align: center
+            &:not(last-child)
+                margin-right: 0
+            &:last-child
+                margin-right: 0
+    .footer
+        &__cText
+            padding-left: 0
+            padding-top: 35px
+            justify-content: center
 
 // @media ( max-width: 374px )
