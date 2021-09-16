@@ -40,6 +40,32 @@ a {
 }
 
 /* //////////PAGE Top\\\\\\\\\\ */
+.mainBlock {
+  position: relative;
+}
+
+.formBlock {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #153e3ebd;
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.formBlock__main {
+  min-width: 94%;
+  min-height: 480px;
+  background: #ffffff8c;
+  position: fixed;
+  top: 30vh;
+}
+
 .header {
   min-height: 840px;
   position: relative;
