@@ -1006,7 +1006,7 @@ a {
   .fifthSection__text_mainText {
     font-size: 24px;
     line-height: 36px;
-    padding-bottom: 100%;
+    padding-bottom: 60%;
     text-align: end;
   }
   .fifthSection__text_link {
@@ -1032,14 +1032,15 @@ a {
     z-index: 1;
     margin-left: 0;
     padding-top: 22px;
-    margin: 8px;
+    padding: 8px;
     width: 100%;
   }
   .sixthSection__text_aboutText {
     padding-bottom: 88px;
+    padding-top: 12px;
   }
   .sixthSection__text_mainText {
-    padding-bottom: 38%;
+    padding-bottom: 34%;
   }
   .sevenSection {
     -webkit-box-pack: center;
@@ -1085,6 +1086,39 @@ a {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+}
+
+@media (max-width: 374px) {
+  .secondSection__info_block {
+    width: 260px;
+    height: 260px;
+  }
+  .secondSection__info_blockText {
+    font-size: 24px;
+  }
+  .thirdSection__block {
+    width: 260px;
+    height: 260px;
+  }
+  .thirdSection__block_text {
+    font-size: 24px;
+    text-align: center;
+  }
+  .thirdSection__block_line {
+    width: 255px;
+    margin-top: 52px;
+  }
+  .thirdSection__block_firstLayer {
+    width: 260px;
+    height: 260px;
+  }
+  .fourthSection {
+    -ms-grid-columns: (minmax(260px, 260px))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(260px, 260px));
+  }
+  .fourthSection__block {
+    width: 260px;
   }
 }
 /*# sourceMappingURL=style.css.map */

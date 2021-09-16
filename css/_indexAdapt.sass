@@ -258,7 +258,7 @@
             &_mainText
                 font-size: 24px
                 line-height: 36px
-                padding-bottom: 100%
+                padding-bottom: 60%
                 text-align: end
             &_link
                 align-self: flex-end
@@ -278,12 +278,13 @@
             z-index: 1
             margin-left: 0
             padding-top: 22px
-            margin: 8px
+            padding: 8px
             width: 100%
             &_aboutText
                 padding-bottom: 88px
+                padding-top: 12px
             &_mainText
-                padding-bottom: 38%
+                padding-bottom: 34%
     .sevenSection
         justify-content: center
         align-items: center
@@ -313,4 +314,26 @@
             padding-top: 35px
             justify-content: center
 
-// @media ( max-width: 374px )
+@media ( max-width: 374px )
+    .secondSection__info_block
+        width: 260px
+        height: 260px
+    .secondSection__info_blockText
+        font-size: 24px
+    .thirdSection
+        &__block
+            width: 260px
+            height: 260px
+            &_text
+                font-size: 24px
+                text-align: center
+            &_line
+                width: 255px
+                margin-top: 52px
+            &_firstLayer
+                width: 260px
+                height: 260px
+    .fourthSection
+        grid-template-columns: repeat(auto-fit, minmax(260px, 260px))
+        &__block
+            width: 260px
