@@ -44,6 +44,25 @@ a
         background: #ffffff8c
         position: fixed
         top: 30vh
+        display: flex
+        justify-content: end
+        &_closeBtnBlock
+            background: none
+            border: none
+            width: 16px
+            height: 16px
+            margin-top: 16px
+            margin-right: 16px
+            line-height: 16px
+            text-align: center
+        &_closeBtn
+            transition: all 0.1s
+            &:hover
+                transform: scale(1.2)
+                color: gray
+            &:active
+                transform: scale(1.5)
+                color: darkgray
 
 .header
     min-height: 840px
@@ -144,6 +163,8 @@ a
         &_checkedBtn
             background: #F9B640
             color: #FFFFFF
+.hidden
+    display: none
 .firstSection
     min-height: 604px
     background: #62D0DF

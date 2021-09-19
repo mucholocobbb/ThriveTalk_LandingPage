@@ -64,6 +64,40 @@ a {
   background: #ffffff8c;
   position: fixed;
   top: 30vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+.formBlock__main_closeBtnBlock {
+  background: none;
+  border: none;
+  width: 16px;
+  height: 16px;
+  margin-top: 16px;
+  margin-right: 16px;
+  line-height: 16px;
+  text-align: center;
+}
+
+.formBlock__main_closeBtn {
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
+}
+
+.formBlock__main_closeBtn:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  color: gray;
+}
+
+.formBlock__main_closeBtn:active {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  color: darkgray;
 }
 
 .header {
@@ -202,6 +236,10 @@ a {
 .header__body_checkedBtn {
   background: #F9B640;
   color: #FFFFFF;
+}
+
+.hidden {
+  display: none;
 }
 
 .firstSection {

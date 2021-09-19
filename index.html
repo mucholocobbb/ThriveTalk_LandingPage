@@ -18,8 +18,10 @@
     <div class="wrapper centre ">
 
         <div class="top mainBlock">
-            <div class="formBlock">
-                <div class="formBlock__main"></div>
+            <div class="formBlock hidden">
+                <div class="formBlock__main">
+                    <button class="formBlock__main_closeBtnBlock"><i class="fas fa-times formBlock__main_closeBtn"></i></button>
+                </div>
             </div>
             <header class="header">
                 <div class="header__backgroundColor"></div>
@@ -256,11 +258,24 @@
             </div>
         </footer>
     </div>
-    <!-- <script>
-        let addForm = document.querySelector('.contactForm').addEventListener('click', getContactForm());
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js"></script>
+    <script>
+        let formBlockBtn = document.querySelector('.formBlock__main_closeBtnBlock')
+        let formBlock = document.querySelector('.formBlock')
+        let addForm = document.querySelectorAll('.contactForm')
+        addForm.forEach(el => {
+            el.addEventListener('click', (el) => {
+                el.preventDefault()
+                formBlock.classList.remove('hidden');
+            });
+        })
 
+        formBlockBtn.addEventListener('click', () => {
+            formBlock.classList.add('hidden');
 
-    </script> -->
+        })
+
+    </script>
 </body>
 
 </html>
