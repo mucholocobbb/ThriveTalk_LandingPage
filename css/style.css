@@ -67,6 +67,24 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.formBlock__main_top {
+  -ms-flex-item-align: end;
+      align-self: end;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: end;
@@ -98,6 +116,154 @@ a {
   -webkit-transform: scale(1.5);
           transform: scale(1.5);
   color: darkgray;
+}
+
+.formBlock__main_center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.formBlock__main_centreHeaderText {
+  border-bottom: 1px solid #6283c3;
+  color: #6283c3;
+  margin-top: 28px;
+  margin-left: 28px;
+  margin-right: 28px;
+}
+
+.formBlock__main_centreHeaderText:last-child {
+  margin-bottom: 28px;
+}
+
+.formBlock__main_centreLinks {
+  font-size: 26px;
+  color: #fff;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+.formBlock__main_centreForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.formBlock__main_centreInpText {
+  font-size: 26px;
+  color: #fff;
+  padding-left: 32px;
+}
+
+.formBlock__main_centreInp {
+  width: 240px;
+  height: 32px;
+  border-radius: 20px;
+  outline: none;
+  border: none;
+  padding-left: 8px;
+  padding-right: 8px;
+  color: #6283c3;
+  font-size: 20px;
+  font-weight: 200;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  background: #ffffff54;
+  margin: 8px;
+}
+
+.formBlock__main_centreInp:focus {
+  border: 1px solid #6283c3;
+  background: #ffffff;
+}
+
+.formBlock__main_centreInp:invalid:not(:placeholder-shown):not(:first-child) {
+  border: 1px solid #e24343;
+  background: #ffdbdb;
+}
+
+.formBlock__main_centreBtn {
+  width: 240px;
+  height: 32px;
+  border-radius: 20px;
+  outline: none;
+  border: none;
+  background: #6283c3;
+  color: #ffffff;
+  font-size: 20px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-top: 8px;
+}
+
+.formBlock__main_centreBtn:hover {
+  background: #7e95c4;
+}
+
+.formBlock__main_centreBtn:active {
+  background: #c6cfe0;
+}
+
+.formBlock__main_bottom {
+  padding-bottom: 16px;
+  padding-top: 16px;
+}
+
+.formBlock__main_botText1 {
+  font-size: 16px;
+  text-align: center;
+  color: #6283c3;
+}
+
+.formBlock__main_botText2 {
+  font-weight: 600;
+}
+
+.succefulBlock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: #8cacec9a;
+  border-radius: 3px;
+}
+
+.sucIcon {
+  font-size: 90px;
+  color: #ffffff8c;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding-top: 32px;
+}
+
+.sucText {
+  color: #ffffff;
+  font-size: 22px;
+  padding: 32px;
 }
 
 .header {

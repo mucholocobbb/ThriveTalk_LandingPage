@@ -20,7 +20,43 @@
         <div class="top mainBlock">
             <div class="formBlock hidden">
                 <div class="formBlock__main">
-                    <button class="formBlock__main_closeBtnBlock"><i class="fas fa-times formBlock__main_closeBtn"></i></button>
+                    <div class="formBlock__main_top">
+                        <button class="formBlock__main_closeBtnBlock"><i
+                                class="fas fa-times formBlock__main_closeBtn"></i>
+                        </button>
+                    </div>
+                    <div class="succefulBlock hidden">
+                        <i class="fas fa-check sucIcon"></i>
+                    </div>
+                    <div class="formBlock__main_center">
+                        <h3 class="formBlock__main_centreHeaderText">Text or Call Us</h3>
+                        <p class="formBlock__main_centreContacts">
+                            <a class="formBlock__main_centreLinks" href="#">Phone: +555 283 784 333</a>
+                            <br>
+                            <a class="formBlock__main_centreLinks" href="#">Email: office@enfold-health.com</a>
+                        </p>
+                        <h3 class="formBlock__main_centreHeaderText">Or...</h3>
+                        <form class="formBlock__main_centreForm" action="#">
+                            <label class="formBlock__main_centreInpText" for="name">What is your name?</label>
+                            <input class="formBlock__main_centreInp nameInput" id="name" type="text" minlength="2"
+                                maxlength="40" placeholder="Your name...">
+                            <label class="formBlock__main_centreInpText" for="phone">Send your phone :</label>
+                            <input class="formBlock__main_centreInp phoneInput" id="phone" type="tel" minlength="10"
+                                maxlength="21" placeholder="Phone..."
+                                pattern="[\+]?\d{1}\s?[\(]?\d{3}[\)]?\s?\d{3}[\-]?\d{2}[\-]?\d{2}">
+                            <label class="formBlock__main_centreInpText" for="email">and email :</label>
+                            <input class="formBlock__main_centreInp emailInput" id="email" type="email" maxlength="40"
+                                placeholder="Email...">
+                            <button class="formBlock__main_centreBtn" type=" submit"> SEND </button>
+                        </form>
+                        <h3 class="formBlock__main_centreHeaderText">
+                            We will contact you ourselves.</h3>
+                    </div>
+                    <div class="formBlock__main_bottom">
+                        <p class="formBlock__main_botText1">
+                            <span class="formBlock__main_botText2">Remember</span> - friends are always there ...</p>
+                    </div>
+
                 </div>
             </div>
             <header class="header">
@@ -259,23 +295,7 @@
         </footer>
     </div>
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js"></script>
-    <script>
-        let formBlockBtn = document.querySelector('.formBlock__main_closeBtnBlock')
-        let formBlock = document.querySelector('.formBlock')
-        let addForm = document.querySelectorAll('.contactForm')
-        addForm.forEach(el => {
-            el.addEventListener('click', (el) => {
-                el.preventDefault()
-                formBlock.classList.remove('hidden');
-            });
-        })
-
-        formBlockBtn.addEventListener('click', () => {
-            formBlock.classList.add('hidden');
-
-        })
-
-    </script>
+    <script src="src/main.js"></script>
 </body>
 
 </html>

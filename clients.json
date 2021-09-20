@@ -1,0 +1,10 @@
+{
+    "clients": [
+        {
+            "id": "123",
+            "name": "John",
+            "phone": "89154088976",
+            "email": "ya@ndex.ua"   
+        }
+    ]
+}
